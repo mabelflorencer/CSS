@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Post</title>
+
+    <style>
+        /* Blog Post Container */
+        .blog {
+            width: 70%;
+            margin: 30px auto;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+
+        /* First line of paragraph */
+        p::first-line {
+            font-weight: bold;
+        }
+
+        /* First letter of paragraph */
+        p::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+
+        /* Quote Styling */
+        blockquote::before {
+            content: "“";
+            font-size: 30px;
+            color: blue;
+        }
+
+        blockquote {
+            font-style: italic;
+            margin-left: 20px;
+        }
+
+        /* Anchor Pseudo-classes */
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: green;
+            text-decoration: underline;
+        }
+
+        /* h4 elements side by side */
+        h4 {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        /* Adjacent Sibling Selector */
+        h4 + h4 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="blog">
+        <h2>My First Blog Post</h2>
+        <h3>Author: Mabel Florence</h3>
+
+        <p>
+            Web development is an exciting field that combines creativity and programming.
+            HTML provides the structure, CSS adds style, and JavaScript makes web pages interactive.
+        </p>
+
+        <blockquote>
+            Learning never exhausts the mind.
+        </blockquote>
+
+        <p>
+            Read more at
+            <a href="https://developer.mozilla.org">MDN Web Docs</a>.
+        </p>
+
+        <h4>Technology</h4>
+        <h4>Programming</h4>
+
+    </div>
+
+</body>
+</html>
