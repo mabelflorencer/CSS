@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Selectors Example</title>
+
+<style>
+    section p {
+        font-size: 18px;
+    }
+    p::first-line {
+        font-weight: bold;
+    }
+    p::first-letter {
+        color: red;
+        font-size: 30px;
+    }
+    h3 + h3 {
+        color: green;
+    }
+    ul li:first-child a {
+        color: red;
+    }
+    a:link {
+        color: blue;
+    }
+    a:visited {
+        color: purple;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+
+<body>
+
+<section>
+    <h2>Welcome to CSS</h2>
+
+    <p>
+        CSS makes web pages attractive and improves the user experience.
+        It allows you to control colors, fonts, spacing, and layouts.
+    </p>
+
+    <p>
+        Learning CSS selectors helps you style specific elements easily.
+        Practice regularly to become confident in web design.
+    </p>
+</section>
+
+<div>
+    <h3>Frontend Development</h3>
+    <h3>Backend Development</h3>
+</div>
+
+<div>
+    <h3>Useful Links</h3>
+    <ul>
+        <li><a href="https://www.google.com">Google</a></li>
+        <li><a href="https://www.w3schools.com">W3Schools</a></li>
+        <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
