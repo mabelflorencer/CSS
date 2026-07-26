@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Blog Section</title>
+
+    <style>
+        .blog-section {
+            display: flex;
+            gap: 20px;
+            background-color: white;
+            padding: 20px;
+        }
+        .blog-post {
+            width: 300px;
+            border: 2px solid gray;
+            padding: 15px;
+            text-align: center;
+        }
+        img[src$=".jpg"] {
+            width: 100%;
+            height: 180px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        a[href^="https"] {
+            color: red;
+        }
+        @media (max-width: 600px) {
+            .blog-section {
+                flex-direction: column;
+                font-size: 14px;
+            }
+        }
+        @media (orientation: portrait) {
+            .blog-section {
+                background-color: lightyellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="blog-section">
+
+        <div class="blog-post">
+            <h2>HTML Basics</h2>
+            <img src="html.jpg" alt="HTML">
+            <p>Learn the fundamentals of HTML and create web pages.</p>
+            <a href="https://www.w3schools.com/html/">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h2>CSS Styling</h2>
+            <img src="css.jpg" alt="CSS">
+            <p>Discover how CSS makes web pages attractive.</p>
+            <a href="https://developer.mozilla.org/">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h2>JavaScript</h2>
+            <img src="javascript.jpg" alt="JavaScript">
+            <p>Learn how JavaScript adds interactivity to websites.</p>
+            <a href="https://javascript.info/">Read More</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
