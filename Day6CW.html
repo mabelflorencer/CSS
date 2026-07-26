@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+
+    <style>
+        .card {
+            width: 250px;
+            padding: 15px;
+            border: 2px solid gray;
+            text-align: center;
+            margin: 20px auto;
+            background-color: white;
+        }
+        .product-img {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            .card {
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+        @media (orientation: landscape) {
+            .card {
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="product.jpg" alt="Product Image" class="product-img">
+
+        <h2>Wireless Headphones</h2>
+
+        <button>Buy Now</button>
+    </div>
+
+</body>
+</html>
